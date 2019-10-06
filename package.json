@@ -1,0 +1,21 @@
+{
+  "name": "userdetailapp",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "composable-middleware": "^0.3.0",
+    "cookie-parser": "~1.4.4",
+    "express": "~4.16.1",
+    "express-jwt": "^5.3.1",
+    "firebase": "^7.1.0",
+    "firebase-admin": "^8.6.0",
+    "http-errors": "~1.6.3",
+    "jsonschema": "^1.2.4",
+    "jsonwebtoken": "^8.5.1",
+    "nodemon": "^1.19.3"
+  }
+}
