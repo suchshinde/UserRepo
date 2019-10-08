@@ -8,7 +8,6 @@ var validateJwt = expressJwt({
 });
 
 function isAuthenticated() {
-console.log(' Inside ')
     return compose()
         // Validate jwt
         .use(function(req, res, next) {
@@ -20,7 +19,6 @@ console.log(' Inside ')
             if(req.query && typeof req.headers.authorization === 'undefined') {
                 req.headers.authorization = `Bearer ${req.cookies.token}`;
             }
-            console.log('req.headers.authorization =', req.headers.authorization);
             validateJwt(req, res, next);
         })
 }
